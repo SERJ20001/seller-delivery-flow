@@ -1,0 +1,16 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="XS_light_37">
+<rect width="44" height="44" rx="11.3548" fill="#E9DDFD"/>
+<g id="Vector">
+<use xlink:href="#stroke0_0_168" fill="black"/>
+<use xlink:href="#stroke0_0_168" fill="url(#paint0_linear_0_168)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_0_168" x1="2.10872" y1="21.3333" x2="29" y2="21.3333" gradientUnits="userSpaceOnUse">
+<stop/>
+<stop offset="1" stop-color="#424242"/>
+</linearGradient>
+<path id="stroke0_0_168" d="M19.3338 12H9.66616C8.77996 12 8.05489 12.7196 8.05489 13.5992V24.7936H1.60977C1.30593 24.7951 1.00866 24.8815 0.751986 25.0428C0.495315 25.2042 0.289626 25.4341 0.158472 25.7061C0.0273184 25.9781 -0.0239971 26.2813 0.0104016 26.581C0.0448004 26.8806 0.163523 27.1645 0.352974 27.4003L13.2432 43.3923C13.5493 43.7761 14.0166 44 14.5 44C14.9834 44 15.4507 43.7761 15.7568 43.3923L28.647 27.4003C28.8365 27.1645 28.9552 26.8806 28.9896 26.581C29.024 26.2813 28.9727 25.9781 28.8415 25.7061C28.7104 25.4341 28.5047 25.2042 28.248 25.0428C27.9913 24.8815 27.6941 24.7951 27.3902 24.7936H20.9451V13.5992C20.9451 12.7196 20.22 12 19.3338 12Z"/>
+</defs>
+</svg>
