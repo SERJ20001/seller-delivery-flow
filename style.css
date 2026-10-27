@@ -11,12 +11,6 @@
   font-display: block;
 }
 @font-face {
-  font-family: Avito;
-  src: url("./assets/AvitoSansText-ExtraBold.woff2") format("woff2");
-  font-weight: 800;
-  font-display: block;
-}
-@font-face {
   font-family: Manrope;
   src: url("./assets/Manrope_Cut_008-Medium.woff2") format("woff2");
   font-weight: 500;
@@ -187,6 +181,17 @@
 .popup .close-sheet {
   top: 10px;
   right: 18px;
+}
+.card-copy p {
+  margin-top: 2px;
+}
+.ai-highlight {
+  position: absolute;
+  left: 12px;
+  top: 80px;
+  width: 54px;
+  height: 17px;
+  pointer-events: none;
 }
 * {
   box-sizing: border-box;
@@ -395,17 +400,6 @@ h3 {
   padding: 10px 14px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-}
-.factoid:nth-child(1) {
-  background-image: url("./assets/factoid-bg-0.png");
-}
-.factoid:nth-child(2) {
-  width: 175.333px;
-  background-image: url("./assets/factoid-bg-1.png");
-}
-.factoid:nth-child(3) {
-  width: 175.333px;
-  background-image: url("./assets/factoid-bg-2.png");
 }
 .factoid h2 {
   font-weight: 800;

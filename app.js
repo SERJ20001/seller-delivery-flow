@@ -91,7 +91,7 @@ const state = {
   screen: "list",
   enabled: false,
   amount: 250,
-  draft: 100,
+  draft: 250,
   minimum: 50,
   maximum: 1000,
   optimal: 250,
@@ -126,11 +126,11 @@ function switchMarkup(id, label, enabled = false) {
 }
 
 function renderItem() {
-  return `<section class="screen" id="item-screen" aria-label="Объявление Salomon" hidden><header class="topbar item-topbar">${statusbar()}<div class="navbar"><button class="back" id="back-to-list" aria-label="Назад к объявлениям">${image("9b08d.svg")}</button>Активно<div class="nav-actions">${image("4a1db.svg")}${image("43672.svg")}</div></div></header><div class="scroll item-scroll" id="item-scroll"><div class="item-photo">${image("d9ce7.png", "", "Кроссовки Salomon")}<span class="photo-counter">1 / 3</span></div><div class="item-stats"><span class="stat">${image("507d2.svg")}100</span><span class="stat">${image("2da1e.svg")}2</span><span class="stat">${image("9c0e3.svg")}2</span><span class="statistics-label">Статистика</span></div><div class="item-buttons"><button disabled>Поднять просмотры</button><button disabled>Запустить рассылку</button><div class="button-row"><button disabled>Забронировать</button><button disabled>Закрыть</button></div></div><section class="promo" aria-label="Привлеките покупателей"><h2>Привлеките покупателей</h2><div class="horizontal" id="promo-carousel"><article class="promo-card delivery-card"><div class="card-body" id="delivery-card" role="button" tabindex="0" aria-label="Настроить скидку на доставку"><div class="card-heading">${switchMarkup("delivery-switch", "Подключить скидку на доставку")}<span class="card-icon">${image("bead3.svg")}</span></div><div class="card-copy"><h3>Скидка на доставку</h3><p>До 2,5 раз больше<br>шансов на продажу</p></div><button class="card-action" id="delivery-amount">250 ₽</button></div><button class="commission-link" id="card-commission">–10% на комиссию ${image("ce3be.svg")}</button></article><article class="promo-card"><div class="card-body"><div class="card-heading">${switchMarkup("sale-switch", "Хватамба")}${image("sale-card-icon.png", "card-icon-export")}</div><div class="card-copy"><h3>Хватамба</h3><p>Нейросеть советует Cкорость продажи вырастает до 41% </p></div><div class="card-action">Скидка 20%</div></div></article><article class="promo-card"><div class="card-body"><div class="card-heading">${switchMarkup("quantity-switch", "Скидка за количество")}${image("quantity-card-icon.png", "card-icon-export")}</div><div class="card-copy"><h3>Скидка<br>за количество</h3><p>Выгодно купить сразу несколько товаров</p></div><div class="card-action">5% от 3 шт.</div></div></article></div></section><section class="delivery-block"><h2>Авито Доставка ${image("908fb.svg")}</h2><div class="delivery-option"><p>Доставка партнёрами Авито</p><p class="muted">Выбраны 3 способа отправки</p>${image("1d6bf.svg")}<button disabled>Настроить доставку</button></div><div class="delivery-option"><p>Доставка силами продавца</p><p class="muted">Выбрано 3 способа отправки</p>${image("1d6bf.svg")}<button disabled>Настроить доставку</button></div><p class="delivery-terms">Включая Авито Доставку с выбранными параметрами, вы соглашаетесь с условиями.</p></section></div><div class="item-home">${homebar()}</div></section>`;
+  return `<section class="screen" id="item-screen" aria-label="Объявление Salomon" hidden><header class="topbar item-topbar">${statusbar()}<div class="navbar"><button class="back" id="back-to-list" aria-label="Назад к объявлениям">${image("9b08d.svg")}</button>Активно<div class="nav-actions">${image("4a1db.svg")}${image("43672.svg")}</div></div></header><div class="scroll item-scroll" id="item-scroll"><div class="item-photo">${image("d9ce7.png", "", "Кроссовки Salomon")}<span class="photo-counter">1 / 3</span></div><div class="item-stats"><span class="stat">${image("507d2.svg")}100</span><span class="stat">${image("2da1e.svg")}2</span><span class="stat">${image("9c0e3.svg")}2</span><span class="statistics-label">Статистика</span></div><div class="item-buttons"><button disabled>Поднять просмотры</button><button disabled>Запустить рассылку</button><div class="button-row"><button disabled>Забронировать</button><button disabled>Закрыть</button></div></div><section class="promo" aria-label="Привлеките покупателей"><h2>Привлеките покупателей</h2><div class="horizontal" id="promo-carousel"><article class="promo-card delivery-card"><div class="card-body" id="delivery-card" role="button" tabindex="0" aria-label="Настроить скидку на доставку"><div class="card-heading">${switchMarkup("delivery-switch", "Подключить скидку на доставку")}<span class="card-icon">${image("bead3.svg")}</span></div><div class="card-copy"><h3>Скидка на доставку</h3><p>До 2,5 раз больше<br>шансов на продажу</p></div><button class="card-action" id="delivery-amount">250 ₽</button></div><button class="commission-link" id="card-commission">–10% на комиссию ${image("ce3be.svg")}</button></article><article class="promo-card"><div class="card-body"><div class="card-heading">${switchMarkup("sale-switch", "Хватамба")}${image("sale-card-icon.png", "card-icon-export")}</div><div class="card-copy"><h3>Хватамба</h3><p>Нейросеть советует Cкорость продажи вырастает до 41% </p></div>${image("ai-highlight.png", "ai-highlight")}<div class="card-action">Скидка 20%</div></div></article><article class="promo-card"><div class="card-body"><div class="card-heading">${switchMarkup("quantity-switch", "Скидка за количество")}${image("quantity-card-icon.png", "card-icon-export")}</div><div class="card-copy"><h3>Скидка<br>за количество</h3><p>Выгодно купить сразу несколько товаров</p></div><div class="card-action">5% от 3 шт.</div></div></article></div></section><section class="delivery-block"><h2>Авито Доставка ${image("908fb.svg")}</h2><div class="delivery-option"><p>Доставка партнёрами Авито</p><p class="muted">Выбраны 3 способа отправки</p>${image("1d6bf.svg")}<button disabled>Настроить доставку</button></div><div class="delivery-option"><p>Доставка силами продавца</p><p class="muted">Выбрано 3 способа отправки</p>${image("1d6bf.svg")}<button disabled>Настроить доставку</button></div><p class="delivery-terms">Включая Авито Доставку с выбранными параметрами, вы соглашаетесь с условиями.</p></section></div><div class="item-home">${homebar()}</div></section>`;
 }
 
 function renderSheet() {
-  return `<div class="overlay" id="discount-overlay" aria-hidden="true"><section class="sheet" id="discount-sheet" role="dialog" aria-modal="true" aria-labelledby="discount-title" tabindex="-1"><div class="sheet-scroll" id="sheet-scroll">${image("delivery-hero.png", "hero", "Скидка на доставку")}<button class="close-sheet" id="close-discount" aria-label="Закрыть настройку скидки">${image("228b7.svg")}</button><div class="sheet-content"><h1 id="discount-title">Скидка на доставку</h1><p class="sheet-description">Чем выше скидка, тем дешевле доставка<br>для покупателя</p><label class="amount-label" for="amount">Выберите сумму</label><div class="amount-box"><input id="amount" class="amount-input" type="text" inputmode="numeric" autocomplete="off" maxlength="4" value="100" aria-label="Сумма скидки, рублей"><span>₽</span><button class="clear" id="clear-amount" aria-label="Очистить сумму">${image("64152.svg")}</button></div><div class="slider-container"><div class="range-track"><div class="range-fill" id="range-fill"></div><button type="button" id="optimal-marker" class="recommendation-button" aria-label="Выбрать рекомендованную скидку 250 рублей">${image("recommendation-circle.png")}</button></div><input id="discount-range" class="range" type="range" min="50" max="1000" step="1" value="100" aria-label="Выбрать скидку на доставку"><div class="range-labels"><span>50</span><span>1 000</span></div><span class="optimal-label" id="optimal-label">${image("recommendation-ai.svg")}250</span></div><div class="guidance" id="guidance"><p class="guidance-copy" id="guidance-copy"></p><button class="guidance-action" id="sheet-commission"><span id="commission-copy">Сэкономьте на комиссии до 10%</span>${image("f09d0.svg", "help")}${image("f30d7.png", "gift")}</button></div></div></div><footer class="calculator"><div class="calculator-product">${image("d9ce7.png", "", "Кроссовки Salomon")}<div><p class="calculator-price">2 000 ₽</p><p class="calculator-title">Кроссовки Salomon</p></div></div><div class="calculator-button"><button class="primary" id="save-discount">Сохранить</button></div>${homebar()}</footer></section></div>`;
+  return `<div class="overlay" id="discount-overlay" aria-hidden="true"><section class="sheet" id="discount-sheet" role="dialog" aria-modal="true" aria-labelledby="discount-title" tabindex="-1"><div class="sheet-scroll" id="sheet-scroll">${image("delivery-hero.png", "hero", "Скидка на доставку")}<button class="close-sheet" id="close-discount" aria-label="Закрыть настройку скидки">${image("228b7.svg")}</button><div class="sheet-content"><h1 id="discount-title">Скидка на доставку</h1><p class="sheet-description">Чем выше скидка, тем дешевле доставка<br>для покупателя</p><label class="amount-label" for="amount">Выберите сумму</label><div class="amount-box"><input id="amount" class="amount-input" type="text" inputmode="numeric" autocomplete="off" maxlength="4" value="250" aria-label="Сумма скидки, рублей"><span>₽</span><button class="clear" id="clear-amount" aria-label="Очистить сумму">${image("64152.svg")}</button></div><div class="slider-container"><div class="range-track"><div class="range-fill" id="range-fill"></div><button type="button" id="optimal-marker" class="recommendation-button" aria-label="Выбрать рекомендованную скидку 250 рублей">${image("recommendation-circle.png")}</button></div><input id="discount-range" class="range" type="range" min="50" max="1000" step="1" value="250" aria-label="Выбрать скидку на доставку"><div class="range-labels"><span>50</span><span>1 000</span></div><span class="optimal-label" id="optimal-label">${image("recommendation-ai.svg")}250</span></div><div class="guidance" id="guidance"><p class="guidance-copy" id="guidance-copy"></p><button class="guidance-action" id="sheet-commission"><span id="commission-copy">Сэкономьте на комиссии до 10%</span>${image("f09d0.svg", "help")}${image("f30d7.png", "gift")}</button></div></div></div><footer class="calculator"><div class="calculator-product">${image("d9ce7.png", "", "Кроссовки Salomon")}<div><p class="calculator-price">2 000 ₽</p><p class="calculator-title">Кроссовки Salomon</p></div></div><div class="calculator-button"><button class="primary" id="save-discount">Сохранить</button></div>${homebar()}</footer></section></div>`;
 }
 
 function renderPopup() {
@@ -213,7 +213,7 @@ function setEnabled(enabled, notify = true) {
 
 function openDiscount() {
   focusBeforeSheet = document.activeElement;
-  state.draft = state.enabled ? state.amount : 100;
+  state.draft = state.amount;
   updateDraft(state.draft);
   document.querySelector("#sheet-scroll").scrollTop = 0;
   const overlay = document.querySelector("#discount-overlay");
@@ -483,7 +483,7 @@ function bindEvents() {
 async function preload() {
   const status = document.querySelector("#loading-status");
   const progress = document.querySelector("#progress");
-  const required = await fetch("./assets.json", {
+  const required = await fetch("./assets.json?v=20261027-2", {
     signal: AbortSignal.timeout(20000),
   }).then((response) => {
     if (!response.ok) throw new Error("Не удалось загрузить список ресурсов");
@@ -515,7 +515,7 @@ async function preload() {
       preparedImages.add(url);
     }
     completed++;
-    progress.value = Math.round((completed / (urls.length + 5)) * 100);
+    progress.value = Math.round((completed / (urls.length + 4)) * 100);
   });
   let next = 0;
   await Promise.all(
@@ -530,13 +530,12 @@ async function preload() {
     [
       "400 15px Avito",
       "700 26px Avito",
-      "800 24px Avito",
       "500 15px Manrope",
       "800 24px Manrope",
     ].map(async (font) => {
       await document.fonts.load(font);
       completed++;
-      progress.value = Math.round((completed / (urls.length + 5)) * 100);
+      progress.value = Math.round((completed / (urls.length + 4)) * 100);
     }),
   );
   await document.fonts.ready;

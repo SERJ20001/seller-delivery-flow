@@ -27,6 +27,7 @@
     "assets/9c0e3.svg",
     "assets/9f608.svg",
     "assets/a2a6e.svg",
+    "assets/ai-highlight.png",
     "assets/bead3.svg",
     "assets/c377f.svg",
     "assets/c9c91.png",
@@ -40,9 +41,6 @@
     "assets/f09d0.svg",
     "assets/f30d7.png",
     "assets/f8d7f.svg",
-    "assets/factoid-bg-0.png",
-    "assets/factoid-bg-1.png",
-    "assets/factoid-bg-2.png",
     "assets/list-header.png",
     "assets/quantity-card-icon.png",
     "assets/recommendation-ai.svg",
@@ -52,7 +50,6 @@
   "fonts": [
     "assets/AvitoSansText-Regular.woff2",
     "assets/AvitoSansText-Bold.woff2",
-    "assets/AvitoSansText-ExtraBold.woff2",
     "assets/Manrope_Cut_008-Medium.woff2",
     "assets/Manrope_Cut_008-ExtraBold.woff2"
   ]
