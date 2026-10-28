@@ -106,15 +106,6 @@
   padding: 4px 0 6px;
   white-space: nowrap;
 }
-.book-ribbon-gray {
-  color: #000;
-}
-.book-ribbon-gray > span {
-  background: #ebeae8;
-}
-.book-ribbon-gray > img:last-child {
-  width: 14px;
-}
 .book-main-info {
   padding: 0 16px;
 }
@@ -233,6 +224,7 @@
 }
 .book-delivery-options > div {
   display: flex;
+  flex: 0 0 auto;
   flex-direction: column;
   background: #f2f1f0;
   border-radius: 16px;

@@ -10,7 +10,7 @@
     {
       title: "Стивен Кинг — Оно",
       price: "650",
-      photo: "home-book.png",
+      photo: "home-book-flag.png",
       location: "Перово, до 5 мин.",
       posted: "Сегодня, 09:40",
       route: "book",
@@ -53,7 +53,7 @@
   }
 
   function render({ image, homebar }) {
-    return `<section class="screen home-screen" id="home-screen" aria-label="Главная Авито"><div class="scroll home-scroll" id="home-scroll">${image("home-header.png", "home-header-art", "Авито. Поиск в Москве. Скидки от продавцов")}<div class="home-categories" aria-label="Категории товаров">${image("home-categories.png", "home-categories-art", "Авто, недвижимость, работа, услуги, электроника, для дома и дачи")}</div><section class="home-recommendations" aria-label="Рекомендации для вас"><div class="home-grid">${recommendations.map((product) => renderRecommendation(product, image)).join("")}</div></section></div><footer class="home-footer"><nav class="home-nav" aria-label="Главное меню"><button type="button" class="home-nav-item home-nav-current" id="home-search" aria-current="page">${image("ec73f.svg")}<span>Поиск</span></button><div class="home-nav-item">${image("702f3.svg")}<span>Избранное</span></div><button type="button" class="home-nav-item" id="home-list" aria-label="Перейти в Мои объявления">${image("home-ads.svg")}<span>Объявления</span></button><div class="home-nav-item">${image("f8d7f.svg")}<span>Сообщения</span></div><div class="home-nav-item">${image("66aba.png", "home-nav-avatar")}<span>Профиль</span></div></nav>${homebar()}</footer></section>`;
+    return `<section class="screen home-screen" id="home-screen" aria-label="Главная Авито"><div class="scroll home-scroll" id="home-scroll">${image("home-header.png", "home-header-art", "Авито. Поиск в Москве. Скидки от продавцов")}<div class="home-categories" aria-label="Категории товаров">${image("home-categories.png", "home-categories-art", "Авто, недвижимость, работа, услуги, электроника, для дома и дачи")}</div><section class="home-recommendations" aria-label="Рекомендации для вас"><div class="home-grid">${recommendations.map((product) => renderRecommendation(product, image)).join("")}</div></section></div><footer class="home-footer"><nav class="home-nav" aria-label="Главное меню"><button type="button" class="home-nav-item home-nav-current" id="home-search" aria-current="page">${image("home-search-active.svg")}<span>Поиск</span></button><div class="home-nav-item">${image("702f3.svg")}<span>Избранное</span></div><button type="button" class="home-nav-item" id="home-list" aria-label="Перейти в Мои объявления">${image("home-ads.svg")}<span>Объявления</span></button><div class="home-nav-item">${image("f8d7f.svg")}<span>Сообщения</span></div><div class="home-nav-item">${image("66aba.png", "home-nav-avatar")}<span>Профиль</span></div></nav>${homebar()}</footer></section>`;
   }
 
   function bind({ navigate }) {
