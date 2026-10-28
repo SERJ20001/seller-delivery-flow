@@ -181,10 +181,6 @@ function renderPopup() {
       "commission-conditions.svg",
       'Условия действуют на продажу\nс Авито Доставкой, кроме мультиобъявлений <span class="terms-link">Условия акции</span>',
     ],
-    [
-      "commission-neural.svg",
-      "Нейросеть советует скидку, сравнивая эффективность скидки на доставку у похожих товаров",
-    ],
   ];
   return `<div class="popup-layer" id="commission-popup" aria-hidden="true"><section class="popup" role="dialog" aria-modal="true" aria-labelledby="commission-title" tabindex="-1"><button class="close-sheet" id="close-commission" aria-label="Закрыть информацию о комиссии">${image("228b7.svg")}</button><div class="popup-scroll"><h2 id="commission-title">Комиссия за продажу<br>станет ниже</h2>${rows.map(([icon, text]) => `<div class="commission-row">${image(icon)}<p>${text}</p></div>`).join("")}</div><footer class="popup-footer"><button id="understood">Понятно</button></footer></section></div>`;
 }
@@ -545,7 +541,7 @@ function bindEvents() {
 async function preload() {
   const status = document.querySelector("#loading-status");
   const progress = document.querySelector("#progress");
-  const required = await fetch("./assets.json?v=20261028-5", {
+  const required = await fetch("./assets.json?v=20261028-6", {
     signal: AbortSignal.timeout(20000),
   }).then((response) => {
     if (!response.ok) throw new Error("Не удалось загрузить список ресурсов");
