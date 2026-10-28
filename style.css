@@ -92,7 +92,7 @@
   height: 28px;
 }
 .guidance[data-tone="low"] {
-  background: #f2f1f0;
+  background: #d4f0ff;
 }
 .guidance[data-tone="high"] {
   background: #d2fcc4;
@@ -179,8 +179,8 @@
   height: 44px;
 }
 .popup .close-sheet {
-  top: 10px;
-  right: 18px;
+  top: 12px;
+  right: 14px;
 }
 .card-copy p {
   margin-top: 2px;
@@ -255,7 +255,7 @@ h3 {
   height: 812px;
   transform-origin: top left;
   background: #fff;
-  overflow: hidden;
+  overflow: clip;
   border-radius: 36px;
   box-shadow: 0 8px 40px #00000012;
 }
@@ -762,7 +762,8 @@ h3 {
 }
 .promo-card.delivery-card {
   width: 170px;
-  background: #d2fcc4;
+  background: #02d15c;
+  height: 228px;
   padding-bottom: 10px;
 }
 .card-body {
@@ -837,6 +838,7 @@ h3 {
   line-height: 16px;
 }
 .commission-link {
+  color: #fff;
   width: 100%;
   display: flex;
   align-items: center;
@@ -847,6 +849,23 @@ h3 {
   margin-top: 6px;
 }
 .commission-link img {
+  width: 12px;
+  height: 16px;
+}
+.sale-card {
+  background: #f2f1f0;
+}
+.card-advice {
+  display: flex;
+  align-items: center;
+  gap: 2.8px;
+  margin-top: 2px;
+  color: #757575;
+  font-size: 13px;
+  line-height: 16px;
+  white-space: nowrap;
+}
+.card-advice img {
   width: 12px;
   height: 16px;
 }
@@ -1238,7 +1257,7 @@ h3 {
   animation: popup-in 0.24s ease;
 }
 .popup-scroll {
-  padding: 26px 16px 20px;
+  padding: 20px 16px 20px;
   overflow-y: auto;
   min-height: 0;
   overscroll-behavior: contain;
@@ -1279,7 +1298,7 @@ h3 {
   cursor: default;
 }
 .popup-footer {
-  padding: 10px 10px 16px;
+  padding: 10px 10px 20px;
   background: #fff;
   border-radius: 0 0 28px 28px;
   flex: none;

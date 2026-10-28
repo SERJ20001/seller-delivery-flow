@@ -1,0 +1,154 @@
+.home-screen {
+  background: #fff;
+}
+
+.home-scroll {
+  top: 0;
+  bottom: 90px;
+}
+
+.home-header-art {
+  width: 374.150238px;
+  height: 153.497543px;
+}
+
+.home-categories {
+  width: 375px;
+  height: 159.253693px;
+  margin-top: 15.349754px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+}
+
+.home-categories::-webkit-scrollbar {
+  display: none;
+}
+
+.home-categories-art {
+  width: 622.62439px;
+  height: 159.253693px;
+}
+
+.home-recommendations {
+  margin-top: 23.024632px;
+  padding: 15.349754px 15.349754px 24px;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 165.969223px);
+  align-items: start;
+  column-gap: 10.552956px;
+  row-gap: 10.552956px;
+}
+
+.home-product {
+  display: block;
+  width: 165.969223px;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: #fff;
+  text-align: left;
+  color: #000;
+  font-family: Manrope, sans-serif;
+  font-weight: 500;
+}
+
+.home-product-photo {
+  width: 165.969223px;
+  height: 165.969223px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.home-product-heading {
+  display: flex;
+  align-items: start;
+  gap: 9.593596px;
+  margin-top: 5.756158px;
+}
+
+.home-product-title {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  font:
+    500 14.73px/20.248px Manrope,
+    sans-serif;
+  overflow-wrap: anywhere;
+}
+
+.home-product-favorite {
+  flex: none;
+  width: 19.187193px;
+  height: 19.187193px;
+}
+
+.home-product-price {
+  margin: 0;
+  font:
+    800 14.73px/18.407px Manrope,
+    sans-serif;
+}
+
+.home-product-location,
+.home-product-posted {
+  margin: 0;
+  color: #757575;
+  font:
+    500 11.96px/16.567px Manrope,
+    sans-serif;
+}
+
+.home-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 375px;
+  height: 90px;
+  background: #fff;
+  z-index: 6;
+}
+
+.home-nav {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 375px;
+  height: 56px;
+  border-top: 0.5px solid #ebeae8;
+  padding-top: 6px;
+}
+
+.home-nav-item {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  height: 42px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 0;
+  color: #858585;
+  font:
+    500 11px/14px Manrope,
+    sans-serif;
+}
+
+.home-nav-current {
+  color: #0099f7;
+}
+
+.home-nav-item > img {
+  width: 24px;
+  height: 24px;
+}
+
+.home-nav-avatar {
+  border-radius: 50%;
+  object-fit: cover;
+}

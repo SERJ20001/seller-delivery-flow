@@ -1,0 +1,834 @@
+.book-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 375px;
+  height: 92px;
+  background: white;
+  z-index: 6;
+}
+.book-header .statusbar {
+  height: 44px;
+}
+.book-navbar {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 14px;
+}
+.buyer-icon-button {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buyer-icon-button img {
+  width: 24px;
+  height: 24px;
+}
+.book-header-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.book-header-actions img {
+  width: 24px;
+  height: 24px;
+}
+.book-header-actions img:first-child {
+  width: 23px;
+}
+.book-scroll {
+  top: 92px;
+  bottom: 109px;
+  padding-bottom: 30px;
+}
+.book-photos {
+  display: flex;
+  gap: 4px;
+  padding: 0 16px;
+  overflow: auto;
+  scrollbar-width: none;
+}
+.book-photo {
+  width: 228px;
+  height: 292px;
+  flex: none;
+  position: relative;
+  border-radius: 16px 6px 6px 16px;
+  overflow: hidden;
+}
+.book-photo > img {
+  width: 228px;
+  height: 292px;
+  object-fit: cover;
+}
+.book-photo-count {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 5px;
+  background: #0009;
+  color: white;
+  font:
+    500 11px/14px Manrope,
+    sans-serif;
+  padding: 2px 6px;
+}
+.book-badges {
+  display: flex;
+  margin: 22px 16px;
+  align-items: center;
+}
+.book-ribbon {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  position: relative;
+  color: white;
+  font:
+    500 13px/18px Manrope,
+    sans-serif;
+  margin-right: -3px;
+}
+.book-ribbon > img {
+  width: 13px;
+  height: 28px;
+}
+.book-ribbon > img.ribbon-left {
+  transform: rotate(180deg) scaleY(-1);
+}
+.book-ribbon > span {
+  height: 28px;
+  background: #ff4053;
+  padding: 4px 0 6px;
+  white-space: nowrap;
+}
+.book-ribbon-gray {
+  color: #000;
+}
+.book-ribbon-gray > span {
+  background: #ebeae8;
+}
+.book-ribbon-gray > img:last-child {
+  width: 14px;
+}
+.book-main-info {
+  padding: 0 16px;
+}
+.book-price {
+  font:
+    700 32px/36px Avito,
+    sans-serif;
+}
+.book-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+  position: relative;
+}
+.book-chip {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  min-height: 30px;
+  border-radius: 10px;
+  background: #f2f1f0;
+  padding: 6px 8px 8px;
+  font:
+    500 13px/16px Manrope,
+    sans-serif;
+  white-space: nowrap;
+}
+.book-chip img {
+  width: 12px;
+  height: 16px;
+}
+.book-main-info h1 {
+  font:
+    700 20px/24px Avito,
+    sans-serif;
+  margin-top: 12px;
+}
+.book-stock {
+  font:
+    400 15px/22px Avito,
+    sans-serif;
+  margin-top: 4px;
+}
+.book-category {
+  font:
+    400 13px/18px Avito,
+    sans-serif;
+  margin-top: 10px;
+  color: #757575;
+}
+.book-delivery-anchor {
+  position: relative;
+}
+.book-tooltip {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  z-index: 8;
+  width: 320px;
+  border-radius: 28px;
+  background: #000;
+  color: #fff;
+  box-shadow: 0 4px 30px #0002;
+  padding: 16px 42px 18px 20px;
+  font:
+    400 15px/20px Avito,
+    sans-serif;
+}
+.book-tooltip[hidden] {
+  display: none;
+}
+.book-tooltip .book-tooltip-arrow {
+  position: absolute;
+  width: 61px;
+  height: 61px;
+  left: 0;
+  top: -37px;
+}
+.book-tooltip > button {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  width: 14px;
+  height: 20px;
+}
+.book-tooltip > button img {
+  width: 14px;
+  height: 20px;
+}
+.book-section {
+  padding: 0 16px;
+  margin-top: 34px;
+}
+.book-section h2 {
+  font:
+    800 26px/30px Manrope,
+    sans-serif;
+  margin: 0 0 8px;
+}
+.book-section p {
+  font:
+    400 15px/22px Avito,
+    sans-serif;
+}
+.book-delivery-section {
+  margin-top: 34px;
+}
+.book-delivery-options {
+  display: flex;
+  gap: 6px;
+  margin-top: 14px;
+  overflow-x: auto;
+  margin-right: -16px;
+  scrollbar-width: none;
+}
+.book-delivery-options > div {
+  display: flex;
+  flex-direction: column;
+  background: #f2f1f0;
+  border-radius: 16px;
+  padding: 12px 16px;
+  min-width: 132px;
+  font:
+    400 13px/18px Avito,
+    sans-serif;
+  white-space: nowrap;
+}
+.book-delivery-options small {
+  font:
+    400 13px/18px Avito,
+    sans-serif;
+}
+.book-delivery-options span {
+  color: #757575;
+}
+.book-delivery-options strong {
+  font-weight: 400;
+}
+.book-green {
+  color: #0b5;
+}
+.book-purple {
+  color: #965eeb;
+}
+.book-installment {
+  background: #f2f1f0;
+  margin: 40px 16px 0;
+  border-radius: 24px;
+  padding: 16px;
+  position: relative;
+}
+.book-installment h2 {
+  font:
+    700 22px/26px Avito,
+    sans-serif;
+  padding-right: 18px;
+}
+.book-installment p {
+  font:
+    400 15px/22px Avito,
+    sans-serif;
+  margin-top: 4px;
+}
+.book-installment-help {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 20px;
+  height: 20px;
+}
+.book-installment-help img {
+  width: 20px;
+  height: 20px;
+}
+.book-months {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0;
+}
+.book-months button {
+  background: #fff;
+  border-radius: 12px;
+  height: 36px;
+  flex: 1;
+  font:
+    400 13px/16px Avito,
+    sans-serif;
+}
+.book-months button[aria-pressed="true"] {
+  background: #141414;
+  color: #fff;
+}
+.book-payment-schedule {
+  display: flex;
+  gap: 10px;
+  font:
+    400 13px/16px Avito,
+    sans-serif;
+  margin-bottom: 16px;
+}
+.book-payment-schedule > div {
+  display: flex;
+  flex-direction: column;
+  padding-top: 8px;
+  border-top: 4px solid #d0d0d0;
+  flex: 1;
+}
+.book-payment-schedule > div:first-child {
+  max-width: 94px;
+  border-top-color: #02d15c;
+}
+.book-payment-schedule b {
+  font-weight: 700;
+}
+.buyer-black,
+.buyer-purple,
+.buyer-success,
+.buyer-secondary {
+  width: 100%;
+  height: 52px;
+  border-radius: 16px;
+  background: #141414;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font:
+    400 15px/20px Avito,
+    sans-serif;
+}
+.buyer-purple {
+  background: #965eeb;
+}
+.buyer-success {
+  background: #02d15c;
+}
+.buyer-secondary {
+  background: #f2f1f0;
+  color: #000;
+}
+.book-installment .buyer-black {
+  height: 44px;
+  border-radius: 12px;
+}
+.book-seller h2 span {
+  color: #0b5;
+}
+.book-seller-rating {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  font:
+    400 15px/22px Avito,
+    sans-serif;
+}
+.book-seller-rating img {
+  width: 16px;
+  height: 16px;
+}
+.book-seller-rating span {
+  margin-left: 6px;
+}
+.book-contact-buttons {
+  display: flex;
+  gap: 8px;
+  margin: 16px -6px 0;
+}
+.book-contact-buttons button {
+  height: 44px;
+  flex: 1;
+  background: #f2f1f0;
+  border-radius: 14px;
+  font:
+    400 15px/20px Avito,
+    sans-serif;
+}
+.book-address span {
+  color: #0af;
+  font:
+    400 15px/22px Avito,
+    sans-serif;
+}
+.book-characteristics dl {
+  margin: 12px 0 32px;
+}
+.book-characteristics dl > div {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+  font:
+    400 15px/22px Avito,
+    sans-serif;
+}
+.book-characteristics dt {
+  color: #757575;
+}
+.book-characteristics dd {
+  margin: 0;
+}
+.book-characteristics p {
+  margin-bottom: 12px;
+}
+.book-ask > button {
+  width: 100%;
+  background: #f2f1f0;
+  text-align: left;
+  padding: 16px;
+  border-radius: 16px;
+  font:
+    400 15px/20px Avito,
+    sans-serif;
+}
+.book-ask > div {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+.book-ask > div > button {
+  background: #141414;
+  color: white;
+  border-radius: 12px;
+  padding: 10px;
+  font:
+    400 13px/16px Avito,
+    sans-serif;
+}
+.book-footer {
+  height: 109px;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 375px;
+  z-index: 5;
+  border-radius: 24px 24px 0 0;
+  box-shadow: 0 0 16px #00000008;
+}
+.book-footer > div:first-child {
+  display: flex;
+  gap: 6px;
+  padding: 10px;
+}
+.book-footer .homebar {
+  height: 37px;
+}
+.book-footer button {
+  width: 50%;
+}
+.buyer-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  background: #0009;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.24s;
+}
+.buyer-layer.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.buyer-sheet {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 375px;
+  background: white;
+  border-radius: 28px 28px 0 0;
+  transform: translateY(110%);
+  transition: transform 0.32s cubic-bezier(0.22, 0.75, 0.25, 1);
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100% - 39px);
+  overflow: hidden;
+}
+.buyer-sheet:focus {
+  outline: none;
+}
+.buyer-layer.open .buyer-sheet {
+  transform: translateY(0);
+}
+.buyer-delivery-sheet {
+  height: 648px;
+}
+.buyer-handle {
+  flex: none;
+  height: 20px;
+  position: relative;
+}
+.buyer-handle:after {
+  content: "";
+  position: absolute;
+  width: 39px;
+  height: 4px;
+  left: 168px;
+  top: 8px;
+  border-radius: 3px;
+  background: #d3d3d3;
+}
+.buyer-close {
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  width: 20px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+.buyer-close img {
+  width: 20px;
+  height: 28.571px;
+}
+.buyer-sheet-scroll {
+  overflow-y: auto;
+  min-height: 0;
+  flex: 1;
+  scrollbar-width: none;
+  overscroll-behavior: contain;
+}
+.buyer-delivery-art {
+  width: 375px;
+  height: 234px;
+  object-fit: contain;
+}
+.buyer-sheet-copy {
+  padding: 6px 16px;
+}
+.buyer-sheet-copy h2 {
+  font:
+    700 21px/26px Avito,
+    sans-serif;
+  margin-bottom: 12px;
+}
+.buyer-sheet-copy p {
+  font:
+    500 15px/22px Manrope,
+    sans-serif;
+  margin-bottom: 12px;
+}
+.buyer-sheet-footer {
+  flex: none;
+  background: #fff;
+  box-shadow:
+    0 1px 3px #00000005,
+    0 4px 24px #0000000d;
+  padding: 10px 10px 0;
+}
+.buyer-sheet-footer .homebar {
+  margin: 0 -10px;
+  height: 34px;
+}
+.buyer-call-sheet {
+  height: 485px;
+}
+.buyer-call-copy {
+  overflow: auto;
+  padding: 0 16px 16px;
+  min-height: 0;
+  flex: 1;
+}
+.buyer-call-art {
+  height: 157px;
+  width: 257px;
+  object-fit: contain;
+  margin: 0 auto 16px;
+}
+.buyer-call-copy h2 {
+  font:
+    800 26px/30px Manrope,
+    sans-serif;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.buyer-call-copy p {
+  font:
+    500 15px/20px Manrope,
+    sans-serif;
+  text-align: center;
+}
+.buyer-call-footer {
+  padding: 10px 10px 0;
+  background: white;
+  flex: none;
+}
+.buyer-call-footer > .buyer-secondary {
+  margin-top: 6px;
+}
+.buyer-call-footer .homebar {
+  height: 32px;
+  margin: 0 -10px;
+}
+.buyer-chat {
+  background: #fafafa;
+}
+.chat-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 375px;
+  height: 108px;
+  z-index: 5;
+  background: #fff;
+  box-shadow: 0 1px 3px #00000008;
+}
+.chat-header .statusbar {
+  height: 44px;
+}
+.chat-navbar {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  gap: 12px;
+}
+.chat-photo {
+  width: 48px;
+  height: 48px;
+  flex: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.chat-photo img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+.chat-person {
+  min-width: 0;
+  flex: 1;
+  font:
+    500 13px/16px Manrope,
+    sans-serif;
+}
+.chat-person strong {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font:
+    800 16px/20px Manrope,
+    sans-serif;
+}
+.chat-person strong img {
+  height: 20px;
+  width: 11px;
+}
+.chat-person > span {
+  display: block;
+  max-width: 174px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 2px;
+}
+.chat-person b {
+  font-weight: 500;
+}
+.chat-header-actions {
+  display: flex;
+  gap: 10px;
+}
+.chat-header-actions img {
+  width: 24px;
+  height: 24px;
+}
+.chat-body {
+  position: absolute;
+  top: 108px;
+  left: 0;
+  width: 375px;
+  bottom: 175px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.chat-empty {
+  margin: auto 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.chat-empty[hidden] {
+  display: none;
+}
+.chat-empty-image {
+  width: 143px;
+  height: 95px;
+  object-fit: cover;
+}
+.chat-empty h2 {
+  font:
+    700 16px/20px Avito,
+    sans-serif;
+  color: #757575;
+}
+.chat-empty p {
+  font:
+    500 15px/22px Manrope,
+    sans-serif;
+  color: #757575;
+}
+.chat-empty .buyer-purple {
+  width: auto;
+  padding: 0 14px;
+  height: 44px;
+  border-radius: 12px;
+}
+.chat-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 375px;
+  background: white;
+  z-index: 5;
+  box-shadow: 0 1px 3px #00000008;
+}
+.chat-suggestions {
+  padding-top: 8px;
+}
+.chat-suggestions > strong {
+  display: block;
+  font:
+    700 16px/20px Avito,
+    sans-serif;
+  padding: 0 16px 8px;
+}
+.chat-suggestions > div {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 0 16px;
+}
+.chat-suggestions button {
+  height: 36px;
+  flex: none;
+  background: #141414;
+  color: white;
+  border-radius: 12px;
+  padding: 0 11px;
+  font:
+    400 13px/16px Avito,
+    sans-serif;
+}
+.chat-form {
+  height: 68px;
+  display: flex;
+  align-items: center;
+  padding: 12px 8px;
+  gap: 8px;
+}
+.chat-attach {
+  width: 28px;
+  height: 44px;
+  flex: none;
+}
+.chat-attach img {
+  width: 24px;
+  height: 24px;
+}
+.chat-form input {
+  flex: 1;
+  min-width: 0;
+  height: 44px;
+  padding: 11px 12px 13px;
+  border: 0;
+  border-radius: 12px;
+  background: #f2f1f0;
+  font:
+    500 15px/20px Manrope,
+    sans-serif;
+}
+.chat-form input::placeholder {
+  color: #a3a3a3;
+}
+.chat-form #chat-send {
+  height: 44px;
+  color: #965eeb;
+  font:
+    400 13px/16px Avito,
+    sans-serif;
+}
+.chat-form #chat-send:disabled {
+  color: #a3a3a3;
+}
+.chat-footer .homebar {
+  height: 27px;
+}
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
+}
+.chat-bubble {
+  align-self: flex-end;
+  max-width: 285px;
+  background: #eee4ff;
+  border-radius: 16px 16px 4px 16px;
+  padding: 12px 16px;
+  font:
+    500 15px/22px Manrope,
+    sans-serif;
+  overflow-wrap: anywhere;
+}
+@media (prefers-reduced-motion: reduce) {
+  .buyer-layer,
+  .buyer-sheet {
+    transition-duration: 0.001ms !important;
+  }
+}
