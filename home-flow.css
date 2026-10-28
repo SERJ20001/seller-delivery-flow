@@ -4,10 +4,18 @@
 
 .home-scroll {
   top: 0;
-  bottom: 90px;
+  bottom: 56px;
+}
+
+.home-header {
+  width: 374.150238px;
+  height: 109.497543px;
+  overflow: hidden;
 }
 
 .home-header-art {
+  display: block;
+  transform: translateY(-44px);
   width: 374.150238px;
   height: 153.497543px;
 }
@@ -108,7 +116,7 @@
   bottom: 0;
   left: 0;
   width: 375px;
-  height: 90px;
+  height: 56px;
   background: #fff;
   z-index: 6;
 }

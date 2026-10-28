@@ -3,12 +3,9 @@
   left: 0;
   top: 0;
   width: 375px;
-  height: 92px;
+  height: 48px;
   background: white;
   z-index: 6;
-}
-.book-header .statusbar {
-  height: 44px;
 }
 .book-navbar {
   height: 48px;
@@ -41,8 +38,8 @@
   width: 23px;
 }
 .book-scroll {
-  top: 92px;
-  bottom: 109px;
+  top: 48px;
+  bottom: 72px;
   padding-bottom: 30px;
 }
 .book-photos {
@@ -171,12 +168,23 @@
   color: #fff;
   box-shadow: 0 4px 30px #0002;
   padding: 16px 42px 18px 20px;
+  animation: book-tooltip-appear 220ms cubic-bezier(0.22, 0.75, 0.25, 1) both;
   font:
     400 15px/20px Avito,
     sans-serif;
 }
 .book-tooltip[hidden] {
   display: none;
+}
+@keyframes book-tooltip-appear {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .book-tooltip .book-tooltip-arrow {
   position: absolute;
@@ -435,7 +443,7 @@
     sans-serif;
 }
 .book-footer {
-  height: 109px;
+  height: 72px;
   background: #fff;
   position: absolute;
   bottom: 0;
@@ -449,9 +457,6 @@
   display: flex;
   gap: 6px;
   padding: 10px;
-}
-.book-footer .homebar {
-  height: 37px;
 }
 .book-footer button {
   width: 50%;
@@ -480,7 +485,7 @@
   transition: transform 0.32s cubic-bezier(0.22, 0.75, 0.25, 1);
   display: flex;
   flex-direction: column;
-  max-height: calc(100% - 39px);
+  max-height: calc(100% - 16px);
   overflow: hidden;
 }
 .buyer-sheet:focus {
@@ -490,7 +495,7 @@
   transform: translateY(0);
 }
 .buyer-delivery-sheet {
-  height: 648px;
+  height: 624px;
 }
 .buyer-handle {
   flex: none;
@@ -555,14 +560,10 @@
   box-shadow:
     0 1px 3px #00000005,
     0 4px 24px #0000000d;
-  padding: 10px 10px 0;
-}
-.buyer-sheet-footer .homebar {
-  margin: 0 -10px;
-  height: 34px;
+  padding: 10px;
 }
 .buyer-call-sheet {
-  height: 485px;
+  height: 463px;
 }
 .buyer-call-copy {
   overflow: auto;
@@ -590,16 +591,12 @@
   text-align: center;
 }
 .buyer-call-footer {
-  padding: 10px 10px 0;
+  padding: 10px;
   background: white;
   flex: none;
 }
 .buyer-call-footer > .buyer-secondary {
   margin-top: 6px;
-}
-.buyer-call-footer .homebar {
-  height: 32px;
-  margin: 0 -10px;
 }
 .buyer-chat {
   background: #fafafa;
@@ -609,13 +606,10 @@
   top: 0;
   left: 0;
   width: 375px;
-  height: 108px;
+  height: 64px;
   z-index: 5;
   background: #fff;
   box-shadow: 0 1px 3px #00000008;
-}
-.chat-header .statusbar {
-  height: 44px;
 }
 .chat-navbar {
   height: 64px;
@@ -676,10 +670,10 @@
 }
 .chat-body {
   position: absolute;
-  top: 108px;
+  top: 64px;
   left: 0;
   width: 375px;
-  bottom: 175px;
+  bottom: 140px;
   overflow-y: auto;
   scrollbar-width: none;
   padding: 20px 16px;
@@ -798,9 +792,6 @@
 .chat-form #chat-send:disabled {
   color: #a3a3a3;
 }
-.chat-footer .homebar {
-  height: 27px;
-}
 .chat-messages {
   display: flex;
   flex-direction: column;
@@ -819,6 +810,9 @@
   overflow-wrap: anywhere;
 }
 @media (prefers-reduced-motion: reduce) {
+  .book-tooltip {
+    animation: none;
+  }
   .buyer-layer,
   .buyer-sheet {
     transition-duration: 0.001ms !important;

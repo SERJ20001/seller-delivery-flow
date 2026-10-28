@@ -311,28 +311,6 @@ h3 {
   background: #fff;
   z-index: 5;
 }
-.statusbar {
-  height: 46px;
-  position: relative;
-}
-.statusbar img {
-  position: absolute;
-  width: 325.83px;
-  height: 12px;
-  left: 34.17px;
-  top: 17px;
-}
-.statusbar .time {
-  position: absolute;
-  left: 16px;
-  top: 14px;
-  background: white;
-  min-width: 51px;
-  font-family: Manrope, sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-}
 .navbar {
   height: 48px;
   display: flex;
@@ -364,9 +342,6 @@ h3 {
 .item-topbar {
   box-shadow: 0 0 16px #0000001a;
 }
-.item-topbar .statusbar {
-  height: 44px;
-}
 .scroll {
   position: absolute;
   left: 0;
@@ -380,8 +355,8 @@ h3 {
   display: none;
 }
 .list-scroll {
-  top: 94px;
-  bottom: 174px;
+  top: 48px;
+  bottom: 140px;
 }
 .factoids {
   height: 108px;
@@ -591,7 +566,7 @@ h3 {
   color: #757575;
 }
 .list-footer {
-  height: 174px;
+  height: 140px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -647,24 +622,9 @@ h3 {
   border-radius: 50%;
   object-fit: cover;
 }
-.homebar {
-  height: 34px;
-  position: relative;
-  background: #fff;
-}
-.homebar:after {
-  content: "";
-  position: absolute;
-  width: 134px;
-  height: 5px;
-  bottom: 8px;
-  left: 120.5px;
-  border-radius: 3px;
-  background: #000;
-}
 .item-scroll {
-  top: 92px;
-  bottom: 18px;
+  top: 48px;
+  bottom: 0;
 }
 .item-photo {
   height: 220px;
@@ -932,17 +892,6 @@ h3 {
   line-height: 16px;
   color: #757575;
 }
-.item-home {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 375px;
-  height: 18px;
-  z-index: 6;
-}
-.item-home .homebar {
-  height: 18px;
-}
 .overlay {
   position: absolute;
   inset: 0;
@@ -959,7 +908,7 @@ h3 {
 .sheet {
   position: absolute;
   left: 0;
-  top: 39px;
+  top: 16px;
   bottom: 0;
   width: 375px;
   border-radius: 32px 32px 0 0;
@@ -973,7 +922,7 @@ h3 {
 }
 .sheet-scroll {
   position: absolute;
-  inset: 0 0 165px;
+  inset: 0 0 141px;
   overflow: auto;
   scrollbar-width: none;
   overscroll-behavior: contain;
@@ -1193,7 +1142,7 @@ h3 {
   bottom: 0;
   left: 0;
   width: 375px;
-  height: 165px;
+  height: 141px;
   background: white;
   border-radius: 24px 24px 0 0;
   box-shadow: 0 0 16px #0000000d;
@@ -1226,12 +1175,6 @@ h3 {
 }
 .calculator-button {
   padding: 10px 10px 20px;
-}
-.calculator .homebar {
-  height: 24px;
-}
-.calculator .homebar:after {
-  bottom: 8px;
 }
 .popup-layer {
   position: absolute;
