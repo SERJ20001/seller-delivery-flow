@@ -85,26 +85,21 @@
 }
 .book-ribbon {
   display: flex;
+  flex: none;
   align-items: center;
+  justify-content: center;
+  width: 150px;
   height: 28px;
+  padding: 4px 13px 6px;
   position: relative;
   color: white;
+  background: url("./assets/book-delivery-ribbon.svg") center / 100% 100% no-repeat;
   font:
     500 13px/18px Manrope,
     sans-serif;
   margin-right: -3px;
 }
-.book-ribbon > img {
-  width: 13px;
-  height: 28px;
-}
-.book-ribbon > img.ribbon-left {
-  transform: rotate(180deg) scaleY(-1);
-}
 .book-ribbon > span {
-  height: 28px;
-  background: #ff4053;
-  padding: 4px 0 6px;
   white-space: nowrap;
 }
 .book-main-info {

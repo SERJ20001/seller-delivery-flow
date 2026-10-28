@@ -539,7 +539,7 @@ function bindEvents() {
 async function preload() {
   const status = document.querySelector("#loading-status");
   const progress = document.querySelector("#progress");
-  const required = await fetch("./assets.json?v=20261028-7", {
+  const required = await fetch("./assets.json?v=20261028-8", {
     signal: AbortSignal.timeout(20000),
   }).then((response) => {
     if (!response.ok) throw new Error("Не удалось загрузить список ресурсов");
