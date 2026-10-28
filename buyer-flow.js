@@ -33,9 +33,8 @@ window.buyerFlow = (() => {
     tooltipTimer = undefined;
     document.querySelector("#book-tooltip").hidden = true;
   }
-  function enterBook({ showTooltip = true } = {}) {
+  function enterBook() {
     hideTooltip();
-    if (!showTooltip) return;
     document.querySelector("#book-scroll").scrollTop = 0;
     tooltipTimer = setTimeout(() => {
       tooltipTimer = undefined;

@@ -208,7 +208,6 @@ function navigate(screen, options = {}) {
   const {
     push = true,
     replace = false,
-    showTooltip = true,
     resetScroll = true,
   } = options;
   closePopup(false);
@@ -219,7 +218,7 @@ function navigate(screen, options = {}) {
   document.querySelectorAll("#screens > .screen").forEach((element) => {
     element.hidden = element.id !== `${screen}-screen`;
   });
-  if (screen === "book") window.buyerFlow.enterBook({ showTooltip });
+  if (screen === "book") window.buyerFlow.enterBook();
   if (screen === "chat") window.buyerFlow.enterChat();
   if (resetScroll) {
     const scroll = document.querySelector(`#${screen}-scroll`);
@@ -489,7 +488,6 @@ function bindEvents() {
       navigate(target.screen || "home", {
         push: false,
         resetScroll: false,
-        showTooltip: false,
       });
   });
   document
@@ -541,7 +539,7 @@ function bindEvents() {
 async function preload() {
   const status = document.querySelector("#loading-status");
   const progress = document.querySelector("#progress");
-  const required = await fetch("./assets.json?v=20261028-6", {
+  const required = await fetch("./assets.json?v=20261028-7", {
     signal: AbortSignal.timeout(20000),
   }).then((response) => {
     if (!response.ok) throw new Error("Не удалось загрузить список ресурсов");
