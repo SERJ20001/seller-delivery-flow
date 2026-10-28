@@ -1,5 +1,5 @@
 window.buyerFlow = (() => {
-  const book = { title: "Стивен Кинг — Оно", price: 650, seller: "Ольга" };
+  const book = { title: "Стивен Кинг — Оно", price: 5000, seller: "Ольга" };
   let image;
   let navigate;
   let back;
@@ -182,14 +182,20 @@ window.buyerFlow = (() => {
         document.querySelector("#book-months-title").textContent =
           `${months} ${months === 4 ? "месяца" : "месяцев"}`;
         document.querySelector("#book-payment-count").textContent =
-          `Дальше ${months} платежей ежемесячно`;
+          `Дальше ${months} ${months === 4 ? "платежа" : "платежей"} ежемесячно`;
       }),
     );
     document
       .querySelector("#book-photos")
       .addEventListener("scroll", (event) => {
+        const gallery = event.target;
+        const maxScroll = gallery.scrollWidth - gallery.clientWidth;
+        const scrollProgress = maxScroll > 0
+          ? Math.min(1, Math.max(0, gallery.scrollLeft / maxScroll))
+          : 0;
+        const currentPhoto = Math.round(scrollProgress * (gallery.children.length - 1)) + 1;
         document.querySelector("#book-photo-count").textContent =
-          event.target.scrollLeft > 50 ? "2 из 2" : "1 из 2";
+          `${currentPhoto} из ${gallery.children.length}`;
       });
     document.addEventListener(
       "keydown",

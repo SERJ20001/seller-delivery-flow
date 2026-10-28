@@ -812,6 +812,9 @@ h3 {
   width: 12px;
   height: 16px;
 }
+.commission-link .commission-fire {
+  width: 9px;
+}
 .sale-card {
   background: #f2f1f0;
 }

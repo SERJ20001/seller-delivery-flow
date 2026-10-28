@@ -51,7 +51,7 @@
 }
 .book-photo {
   width: 228px;
-  height: 292px;
+  height: 196px;
   flex: none;
   position: relative;
   border-radius: 16px 6px 6px 16px;
@@ -59,8 +59,12 @@
 }
 .book-photo > img {
   width: 228px;
-  height: 292px;
+  height: 196px;
   object-fit: cover;
+}
+.book-photo:nth-child(2),
+.book-photo:nth-child(2) > img {
+  width: 127px;
 }
 .book-photo-count {
   position: absolute;

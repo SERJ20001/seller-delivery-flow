@@ -133,7 +133,7 @@ function renderSellerCards() {
           <div class="card-copy"><h3>Скидка на доставку</h3><p>До 2,5 раз больше<br>шансов на продажу</p></div>
           <button class="card-action" id="delivery-amount">250 ₽</button>
         </div>
-        <button class="commission-link" id="card-commission" aria-label="О скидке на комиссию"><span>–10% на комиссию</span>${image("seller-commission-help.svg")}</button>
+        <button class="commission-link" id="card-commission" aria-label="О скидке на комиссию">${image("seller-commission-fire.svg", "commission-fire")}<span>–10% на комиссию</span>${image("seller-commission-help.svg")}</button>
       </article>
       <article class="promo-card sale-card">
         <div class="card-body">
@@ -545,7 +545,7 @@ function bindEvents() {
 async function preload() {
   const status = document.querySelector("#loading-status");
   const progress = document.querySelector("#progress");
-  const required = await fetch("./assets.json?v=20261028-4", {
+  const required = await fetch("./assets.json?v=20261028-5", {
     signal: AbortSignal.timeout(20000),
   }).then((response) => {
     if (!response.ok) throw new Error("Не удалось загрузить список ресурсов");

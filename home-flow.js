@@ -9,7 +9,7 @@
     },
     {
       title: "Стивен Кинг — Оно",
-      price: "650",
+      price: "5 000",
       photo: "home-book-flag.png",
       location: "Перово, до 5 мин.",
       posted: "Сегодня, 09:40",
@@ -48,7 +48,7 @@
   function renderRecommendation(product, image) {
     const content = `${image(product.photo, "home-product-photo", product.title)}<div class="home-product-heading"><h2 class="home-product-title">${product.title}</h2>${image("home-favorite.svg", "home-product-favorite")}</div><p class="home-product-price">${product.price} ₽</p><p class="home-product-location">${product.location}</p><p class="home-product-posted">${product.posted}</p>`;
     return product.route === "book"
-      ? `<button type="button" class="home-product" id="home-book" aria-label="Открыть книгу Стивен Кинг — Оно, 650 рублей">${content}</button>`
+      ? `<button type="button" class="home-product" id="home-book" aria-label="Открыть книгу Стивен Кинг — Оно, 5000 рублей">${content}</button>`
       : `<article class="home-product">${content}</article>`;
   }
 
